@@ -3,7 +3,6 @@ A responsive forced directed graph
 
 
 
-### example
+### example:
 
-![ScreenShot] (https://raw.githubusercontent.com/harsha-konda/Resizable-Forced-Directed-Graph/master/output.png)
-
+<img src="output.png" align="left" hspace="10" vspace="6">
