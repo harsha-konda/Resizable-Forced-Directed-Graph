@@ -5,4 +5,4 @@ A responsive forced directed graph
 
 ### example:
 
-![Logo] (output.png)
+![Github Logo] (https://github.com/harsha-konda/Resizable-Forced-Directed-Graph/blob/master/output.png)
