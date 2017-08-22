@@ -8,7 +8,19 @@ var svg = d3.select(element).append("svg");
 var force = d3.layout.force();
 
 	
-   
+ // build the arrow.
+svg.append("svg:defs").selectAll("marker")
+.data(["end"])      // Different link/path types can be defined here
+.enter().append("svg:marker")    // This section adds in the arrows
+.attr("id", String)
+.attr("viewBox", "0 -5 10 10")
+.attr("refX", 25)
+.attr("refY", 0)
+.attr("markerWidth", 4)
+.attr("markerHeight", 4)
+.attr("orient", "auto")
+.append("svg:path")
+.attr("d", "M0,-5L10,0L0,5");
 
 // Compute the distinct nodes from the links.
 links.forEach(function(link) {
@@ -19,8 +31,8 @@ links.forEach(function(link) {
 force
     .nodes(d3.values(nodes))
     .links(links)
-     .linkDistance(40)
-     .charge(-150)
+     .linkDistance(70)
+     .charge(-250)
     .on("tick", tick)
     .start();
 
@@ -28,7 +40,9 @@ force
 var link = svg.selectAll(".link")
     .data(force.links())
   .enter().append("line")
-    .attr("class", "link");
+    .attr("class", "link")
+        .attr("marker-end", "url(#end)");
+
 
 
 
