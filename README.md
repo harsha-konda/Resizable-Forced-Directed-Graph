@@ -5,4 +5,5 @@ A responsive forced directed graph
 
 ### example:
 
-<img src="output.png" align="left" hspace="5" vspace="5" width="50%">
+Demo
+<a href="https://harsha-konda.github.io/Resizable-Forced-Directed-Graph/">
